@@ -27,3 +27,6 @@ block content
             textarea(rows='6', cols='30', name='message', placeholder='Enter message..')
         .row
           input(type='Submit', value='Send')
+  script. 
+    var msgStr = !{JSON.stringify(info)};
+    alert(msgStr)

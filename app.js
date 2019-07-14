@@ -71,7 +71,7 @@ app.post('/send', (req,res) => {
       console.log('Message sent: %s', info.messageId);   
       console.log('Preview URL: %s', nodemailer.getTestMessageUrl(info));
 
-      res.render('index');
+      res.render('index', {info: 'Message sent successfully!'});
   });
 });
 // catch 404 and forward to error handler
