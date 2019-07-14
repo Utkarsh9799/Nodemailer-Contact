@@ -1,8 +1,89 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  font-size: 20px;
+  background-image: url("https://mdbootstrap.com/img/Photos/Horizontal/Nature/full page/img(11).jpg");
+  height: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+h1 {
+  font-family: 'Abril Fatface', cursive;
+  font-size: 50px;
+  text-align: center;
+  margin-bottom: 1%;
+  color: 	#8B008B	;
+}
+
+.wrapper {
+  text-align: center;
+}
+
+.container {
+  border-radius: 8px;
+  background-color: rgba(248,248,255,0.3);
+  padding: 25px;
+  display: inline-block;
+  min-width: 420px;
+  position: relative;
+}
+
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+select:invalid {
+  color: gray;
+}
+
+input[type=text],select {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  resize: vertical;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+input[type=submit] {
+  background-color: greenyellow;
+  color: black;
+  padding: 12px 20px;
+  border: none;
+  margin-top: 10px; 
+  margin-bottom: 15px;
+  border-radius: 4px;
+  cursor: pointer;    
+  float: right;
+}
+
+input[type=submit]:hover {
+  background-color: greenyellow;
+  transform: scale(1.1);
 }
 
 a {
-  color: #00B7FF;
+  color: white;
 }

@@ -1,5 +1,24 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
+  h1 Contact Form
+  .wrapper
+    .container
+      form(method='post')
+        .row
+          .col-25
+            label(for='Name') Name:  
+          .col-75
+            input#name(type='text', placeholder='Name..', name='name')
+        .row
+          .col-25
+            label(for='Email') Email: 
+          .col-75
+            input#email(type='text', placeholder='Email..', name='email')
+        .row
+          .col-25
+            label(for='Message') Message: 
+          .col-75
+            input#email(type='text', placeholder='Message..', name='msg')
+        .row
+          input(type='Submit', value='Send')
