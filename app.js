@@ -42,7 +42,7 @@ app.post('/send', (req,res) => {
 
   // create reusable transporter object using the default SMTP transport
   let transporter = nodemailer.createTransport({
-    host: 'smtp.ethereal.com',
+    host: 'smtp.ethereal.email',
     port: 587,
     secure: false, // true for 465, false for other ports
     auth: {
@@ -71,9 +71,7 @@ app.post('/send', (req,res) => {
       console.log('Message sent: %s', info.messageId);   
       console.log('Preview URL: %s', nodemailer.getTestMessageUrl(info));
 
-      res.render('index', () => {
-        alert('Mail sent successfully!');
-      });
+      res.render('index');
   });
 });
 // catch 404 and forward to error handler
