@@ -4,7 +4,7 @@ block content
   h1 Contact Form
   .wrapper
     .container
-      form(method='post')
+      form(method='post', action='send')
         .row
           .col-25
             label(for='Name') Name:  
@@ -17,8 +17,13 @@ block content
             input#email(type='text', placeholder='Email..', name='email')
         .row
           .col-25
+            label(for='Phone') Phone: 
+          .col-75
+            input#email(type='text', placeholder='Phone number..', name='phone')
+        .row
+          .col-25
             label(for='Message') Message: 
           .col-75
-            textarea(rows='6', cols='30', name='msg', placeholder='Enter message..')
+            textarea(rows='6', cols='30', name='message', placeholder='Enter message..')
         .row
           input(type='Submit', value='Send')
