@@ -1,5 +1,5 @@
 # Nodemailer-Contact
-A node and express application to implement Nodemailer module for contacting via email. The sender address is an ethereal generated email address, so if you want to use your own personal address then implement it with OAuth2 or make sure your code isn't shared to sidestep security vulnerabilities.
+A node and express application to implement Nodemailer module for contacting via email. The sender email address is an ethereal generated email address, so if you want to use your own personal email address then implement it with OAuth2 or make sure your code isn't shared to sidestep security vulnerabilities.
 
 ## Requirements
 Node (Version>8.x.x) [Download link: https://nodejs.org/en/download]
